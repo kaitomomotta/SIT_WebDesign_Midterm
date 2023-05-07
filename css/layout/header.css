@@ -1,0 +1,140 @@
+header {
+    padding: 2.5em 10%;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.logo-icon {
+    width: 2rem;
+}
+
+.hamnav {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.close {
+    position: absolute;
+    font-size: 2rem;
+    color: var(--white);
+    right: 10%;
+    top: 1.25em;
+}
+
+.toggle-hamnav {
+    position: absolute;
+    top: 3.5em;
+    right: 10%;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    z-index: 50;
+    opacity: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3em;
+    display: none;
+}
+
+.nav-member {
+    position: relative;
+}
+
+.nav-member:hover .nav-member-dropdown {
+    display: flex;
+}
+
+.nav-member-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.nav-member-dropdown {
+    list-style: none;
+    position: absolute;
+    top: 2.5rem;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    cursor: pointer;
+}
+
+.nav-member-dropdown a {
+    width: 100%;
+}
+
+.nav-item {
+    padding: 0.5em 1em;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav {
+        width: 100vw;
+        height: 100vh;
+        max-width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .nav-item {
+        font-size: 1.5rem;
+    }
+
+    .toggle-member {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 4rem;
+        width: 12rem;
+        z-index: 10;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    .toggle-member:hover~.nav-member-item {
+        background-color: var(--black);
+    }
+
+    .toggle-member:checked~.nav-member-dropdown {
+        display: flex;
+    }
+
+    .nav-member-dropdown {
+        text-align: center;
+        top: 4rem;
+    }
+
+    .nav-item:hover {
+        background-color: var(--black);
+    }
+
+    .hamnav {
+        display: block;
+    }
+
+    .toggle-hamnav:checked~.nav {
+        display: flex;
+    }
+}
