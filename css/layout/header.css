@@ -1,5 +1,7 @@
 header {
-    padding: 2.5em 10%;
+    padding: 2em 10%;
+    position: relative;
+    z-index: 100;
 }
 
 .header-container {
@@ -19,16 +21,19 @@ header {
 }
 
 .hamnav {
-    color: white;
+    color: var(--white);
     font-size: 1.5rem;
+    display: none;
 }
 
-.close {
-    position: absolute;
-    font-size: 2rem;
+.close-icon {
     color: var(--white);
+    top: 1.8em;
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 20;
     right: 10%;
-    top: 1.25em;
+    display: none;
 }
 
 .toggle-hamnav {
@@ -40,6 +45,7 @@ header {
     cursor: pointer;
     z-index: 50;
     opacity: 0;
+    display: none;
 }
 
 .nav {
@@ -47,7 +53,18 @@ header {
     align-items: center;
     list-style: none;
     gap: 3em;
+}
+
+.toggle-member {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    width: 12rem;
+    z-index: 10;
+    cursor: pointer;
+    opacity: 0;
 }
 
 .nav-member {
@@ -67,15 +84,11 @@ header {
 .nav-member-dropdown {
     list-style: none;
     position: absolute;
-    top: 2.5rem;
+    top: 2.6rem;
     display: none;
     flex-direction: column;
     width: 100%;
     cursor: pointer;
-}
-
-.nav-member-dropdown a {
-    width: 100%;
 }
 
 .nav-item {
@@ -84,12 +97,26 @@ header {
     border-radius: 5px;
 }
 
+.nav-dropdown-item {
+    padding: 0.5em 1em;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    display: block;
+}
+
+
 @media screen and (max-width: 1024px) {
+
+    .hamnav {
+        display: block;
+    }
+
     .nav {
+        display: none;
         width: 100vw;
         height: 100vh;
         max-width: 100%;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         flex-direction: column;
@@ -98,19 +125,20 @@ header {
         gap: 1em;
     }
 
-    .nav-item {
+    .nav-item,
+    .nav-dropdown-item {
         font-size: 1.5rem;
     }
 
+    .nav-dropdown-item:hover {
+        background-color: black;
+
+    }
+
+
+    .toggle-hamnav,
     .toggle-member {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 4rem;
-        width: 12rem;
-        z-index: 10;
-        cursor: pointer;
-        opacity: 0;
+        display: block;
     }
 
     .toggle-member:hover~.nav-member-item {
@@ -137,4 +165,9 @@ header {
     .toggle-hamnav:checked~.nav {
         display: flex;
     }
+
+    .toggle-hamnav:checked~.close-icon {
+        display: block;
+    }
+
 }
