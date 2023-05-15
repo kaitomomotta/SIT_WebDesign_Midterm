@@ -35,7 +35,7 @@ section {
 }
 
 .profile-greetings {
-    color: var(--orange);
+    color: var(--red);
 }
 
 .profile-links {
@@ -56,7 +56,7 @@ section {
 }
 
 .origin {
-    background-color: var(--orange);
+    background-color: var(--red);
 }
 
 .origin-container {
@@ -102,7 +102,7 @@ section {
 }
 
 .favorite-card h3 {
-    color: var(--orange);
+    color: var(--red);
 }
 
 .favorite-card p {
@@ -116,15 +116,19 @@ section {
     border-radius: 5px;
 }
 
-.uni-logo {
-    width: 12rem;
-    margin-top: 1em;
+footer {
+    background-color: var(--red);
 }
 
-.nav-item:hover {
-    background-color: var(--orange);
-}
+@media screen and (min-width: 1024px) {
+    .nav-item:hover {
+        background-color: var(--red);
+    }
 
+    .nav-dropdown-item:hover {
+        background-color: var(--red);
+    }
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -143,7 +147,7 @@ section {
     }
 
     .nav {
-        background-color: var(--orange);
+        background-color: var(--red);
     }
 
     .profile-container,

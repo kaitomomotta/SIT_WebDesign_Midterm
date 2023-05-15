@@ -1,6 +1,5 @@
 footer {
     padding: 4em 15% 4em 10%;
-    background-color: var(--orange);
 }
 
 footer a:hover {
@@ -41,6 +40,11 @@ footer a:hover {
 
 .footer-copyright {
     text-align: center;
+}
+
+.uni-logo {
+    width: 12rem;
+    margin-top: 1em;
 }
 
 @media screen and (max-width: 1024px) {

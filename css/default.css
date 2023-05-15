@@ -11,7 +11,7 @@
     --black: #070c0d;
     --orange: #F26241;
     --white: #f9f9f9;
-    --tablet-size: 1024px;
+    --red: #cf1e27;
 }
 
 h1,
@@ -58,4 +58,10 @@ a {
 
 body {
     background-color: var(--black);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
