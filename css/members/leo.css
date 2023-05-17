@@ -56,7 +56,7 @@ section {
 }
 
 .origin {
-    background: linear-gradient(to bottom, rgb(10, 224, 49), rgb(215, 238, 14));
+    background: linear-gradient(to bottom, rgb(3, 166, 74), rgb(158, 175, 3));
 }
 
 .origin-container {
@@ -117,7 +117,7 @@ section {
 }
 
 footer {
-    background: linear-gradient(to bottom, rgb(10, 224, 49), rgb(215, 238, 14));
+    background: linear-gradient(to bottom, rgb(3, 166, 74), rgb(158, 175, 3));
 
 }
 
