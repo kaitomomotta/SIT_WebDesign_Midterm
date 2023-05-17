@@ -35,7 +35,7 @@ section {
 }
 
 .profile-greetings {
-    color: greenyellow;
+    color: #03A64A;
 }
 
 .profile-links {
@@ -102,7 +102,7 @@ section {
 }
 
 .favorite-card h3 {
-    color: greenyellow;
+    color: #03A64A;
 }
 
 .favorite-card p {
@@ -123,11 +123,11 @@ footer {
 
 @media screen and (min-width: 1024px) {
     .nav-item:hover {
-        background-color: greenyellow;
+        background-color: #03A64A;
     }
 
     .nav-dropdown-item:hover {
-        background-color: greenyellow;
+        background-color: #03A64A;
     }
 }
 
@@ -148,7 +148,7 @@ footer {
     }
 
     .nav {
-        background-color: greenyellow;
+        background-color: #03A64A;
     }
 
     .profile-container,
