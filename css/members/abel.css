@@ -40,7 +40,7 @@ section {
 }
 
 .profile-greetings {
-    color:rgb(76, 163, 255);
+    color: rgb(76, 163, 255);
 }
 
 .profile-links {
@@ -108,7 +108,8 @@ section {
 }
 
 .favorite-card h3 {
-    color: rgb(76, 163, 255);;
+    color: rgb(76, 163, 255);
+    ;
 }
 
 .favorite-card p {
@@ -122,6 +123,7 @@ section {
     border-radius: 5px;
     transition: ease-in 0.1s;
 }
+
 .favorite-card-image:hover {
     filter: brightness(110%);
 }
@@ -135,6 +137,15 @@ section {
     background: black;
 }
 
+@media screen and (min-width: 1024px) {
+    .nav-item:hover {
+        background-color: rgb(76, 163, 255);
+    }
+
+    .nav-dropdown-item:hover {
+        background-color: rgb(76, 163, 255);
+    }
+}
 
 @media screen and (max-width: 1024px) {
 
