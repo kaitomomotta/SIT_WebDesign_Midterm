@@ -132,7 +132,7 @@ section {
 }
 
 .nav-item:hover {
-    background: linear-gradient(to bottom, rgb(114, 182, 255), rgb(113, 0, 128));
+    background: black;
 }
 
 
