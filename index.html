@@ -1,207 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <style>
-      @import url("./css/index.css");
-    </style>
-    <title>Group 10</title>
-  </head>
-  <body>
-    <header>
-      <div class="header-container container">
-        <div class="logo">
-          <h4 class="logo-title">GROUP 10</h4>
-        </div>
-        <nav>
-          <input type="checkbox" class="toggle-hamnav" name="" id="" />
-          <i class="fa fa-navicon hamnav"></i>
-          <i class="fa fa-close close-icon"></i>
-          <ul class="nav">
-            <li><a class="nav-item" href="/">Home</a></li>
-            <li class="nav-member">
-              <input type="checkbox" class="toggle-member" name="" id="" />
-              <div class="nav-member-item nav-item">
-                Members
-                <i class="fa fa-caret-down"></i>
-              </div>
-              <ul class="nav-member-dropdown">
-                <li>
-                  <a href="./member/abel.html" class="nav-dropdown-item"
-                    >Abel</a
-                  >
-                </li>
-                <li>
-                  <a href="./member/leo.html" class="nav-dropdown-item">Leo</a>
-                </li>
-                <li>
-                  <a href="./member/ryne.html" class="nav-dropdown-item"
-                    >Ryne</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    @import url("./css/index.css");
+  </style>
+  <title>Group 10</title>
+</head>
+
+<body>
+  <!-- The header of the site -->
+  <header>
+    <div class="header-container container">
+      <!-- The logo -->
+      <div class="logo">
+        <h4 class="logo-title"><a href="../index.html">GROUP 10</a></h4>
       </div>
-    </header>
-    <main>
-      <div class="hero-section">
-        <video
-          src="./assets/home-video.mp4"
-          class="hero-video"
-          autoplay
-          loop
-          muted
-        ></video>
-        <div class="hero-overlay">
-          <h1>こんにちは!</h1>
-          <h4>We’re from group 10</h4>
-        </div>
-      </div>
-      <section class="opinion-section">
-        <h1>Takes on Japan</h1>
-        <ul class="opinion-list">
-          <li class="opinion-item">
-            <img src="./assets/takes/food.jpg" class="opinion-image" alt="" />
-            <div class="opinion-detail">
-              <h2>Food</h2>
-              <h4>10/10, 90% of our savings went to this</h4>
-              <p>
-                Japanese cuisine is very unique and special. From fancy sushi to quick street ramen, that are
-                a big variety of foods that you can find for very cheap, or very expensive. 
-                
-                But the best thing about eating in Japan is that you can find food from anywhere in the world, and it will be 
-                good. 
-              </p>
-              <p>
-                Our group's favorite japanese foods are Sushi, Tonkatsu, Ramen, Okonomiyaki and Gyudon.
-              </p>
+      <!-- The navigation section (including the responsive section) -->
+      <nav>
+        <!-- checkbox to toggle the navbar on responsive -->
+        <input type="checkbox" class="toggle-hamnav" name="" id="" />
+        <!-- Icons for responsive navbar -->
+        <i class="fa fa-navicon hamnav"></i>
+        <i class="fa fa-close close-icon"></i>
+
+        <!-- The navbar items -->
+        <ul class="nav">
+          <li><a class="nav-item" href="/">Home</a></li>
+          <li class="nav-member">
+            <!-- checkbox to toggle the members dropdown -->
+            <input type="checkbox" class="toggle-member" name="" id="" />
+            <div class="nav-member-item nav-item">
+              Members
+              <i class="fa fa-caret-down"></i>
             </div>
-          </li>
-          <li class="opinion-item">
-            <img
-              src="./assets/takes/transport.jpg"
-              class="opinion-image"
-              alt=""
-            />
-            <div class="opinion-detail">
-              <h2>Trains</h2>
-              <h4>
-                One of the most comfortable transportations, until rush hour
-                begins
-              </h4>
-              <p>
-                Tokyo subway is awesome because it is easy to use and covers the whole city. 
-                You can easily find your station by its number and color. 
-                You can buy a tourist pass for unlimited travel on all subway lines. 
-                Tokyo subway has 13 lines and 285 stations.
-                It can get really busy early in the morning or around 5pm tho.
-              </p>
-            </div>
+            <ul class="nav-member-dropdown">
+              <li>
+                <a href="./member/abel.html" class="nav-dropdown-item">Abel</a>
+              </li>
+              <li>
+                <a href="./member/leo.html" class="nav-dropdown-item">Leo</a>
+              </li>
+              <li>
+                <a href="./member/ryne.html" class="nav-dropdown-item">Ryne</a>
+              </li>
+            </ul>
           </li>
         </ul>
-      </section>
-      <section class="member-section">
-        <h1>Members</h1>
-        <ul class="member-list">
-          <li>
-            <a class="member-item member-item-abel" href="./member/abel.html">
-              <img
-                src="./assets/abel/profile.jpg"
-                alt=""
-                class="member-image"
-              />
-              <div class="member-name">
-                <h2>Abel</h2>
-                <img
-                  src="./assets/abel/france.png"
-                  alt="Brazil Flag"
-                  class="logo-icon"
-                />
-              </div>
-            </a>
-          </li>
-          <li>
-            <a class="member-item member-item-leo" href="./member/leo.html">
-              <img
-                src="./assets/leo/profile.jpeg"
-                alt=""
-                class="member-image"
-              />
-              <div class="member-name">
-                <h2>Leo</h2>
-                <img
-                  src="./assets/leo/Brazil_Flag.png"
-                  alt="Indonesia Flag"
-                  class="logo-icon"
-                />
-              </div>
-            </a>
-          </li>
-          <li>
-            <a class="member-item member-item-ryne" href="./member/ryne.html">
-              <img
-                src="./assets/ryne/profile.jpg"
-                alt=""
-                class="member-image"
-              />
-              <div class="member-name">
-                <h2>Ryne</h2>
-                <img
-                  src="./assets/ryne/indonesian-flag.png"
-                  alt="Indonesia Flag"
-                  class="logo-icon"
-                />
-              </div>
-            </a>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-container container">
-        <div class="footer-upper">
-          <div class="footer-sitemap">
-            <h4 class="footer-title">Sitemap</h4>
-            <ul class="footer-list">
-              <li><a href="">Home</a></li>
-              <li><a href="">Abel's Page</a></li>
-              <li><a href="">Leo's Page</a></li>
-              <li><a href="">Ryne's Page</a></li>
-            </ul>
-          </div>
-          <div class="footer-randoms">
-            <h4 class="footer-title">Random Links</h4>
-            <ul class="footer-list">
-              <li><a href="https://github.com/RyneFerdinand">Ryne's Github</a></li>
-              <li><a href="https://github.com/kaitomomotta">Abel's Github</a></li>
-              <li><a href="https://github.com/leoishicava">Leo's Github</a></li>
-            </ul>
-          </div>
-          <div class="footer-about">
-            <h4 class="footer-title">About the Website</h4>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+    <!-- The hero section, made as a div as it has a different styling -->
+    <div class="hero-section">
+      <video src="./assets/home-video.mp4" class="hero-video" autoplay loop muted></video>
+      <div class="hero-overlay">
+        <h1>こんにちは!</h1>
+        <h4>We’re from group 10</h4>
+      </div>
+    </div>
+    <!-- The opinion section, where we give our takes on Japan -->
+    <section class="opinion-section">
+      <h1>Takes on Japan</h1>
+      <ul class="opinion-list">
+        <li class="opinion-item">
+          <img src="./assets/takes/food.jpg" class="opinion-image" alt="" />
+          <div class="opinion-detail">
+            <h2>Food</h2>
+            <h4>10/10, 90% of our savings went to this</h4>
             <p>
-              The website is an assingment from the Web and Design class at
-              Shibaura Institute of Technology. As such, this is created only
-              for educational purposes.
+              Japanese cuisine is very unique and special. From fancy sushi to quick street ramen, that are
+              a big variety of foods that you can find for very cheap, or very expensive.
+
+              But the best thing about eating in Japan is that you can find food from anywhere in the world, and it will
+              be
+              good.
             </p>
-            <img
-              class="uni-logo"
-              src="./assets/sit-logo.png"
-              alt="Shibaura Institute of Technology Logo"
-            />
+            <p>
+              Our group's favorite japanese foods are Sushi, Tonkatsu, Ramen, Okonomiyaki and Gyudon.
+            </p>
           </div>
+        </li>
+        <li class="opinion-item">
+          <img src="./assets/takes/transport.jpg" class="opinion-image" alt="" />
+          <div class="opinion-detail">
+            <h2>Trains</h2>
+            <h4>
+              One of the most comfortable transportations, until rush hour
+              begins
+            </h4>
+            <p>
+              Tokyo subway is awesome because it is easy to use and covers the whole city.
+              You can easily find your station by its number and color.
+              You can buy a tourist pass for unlimited travel on all subway lines.
+              Tokyo subway has 13 lines and 285 stations.
+              It can get really busy early in the morning or around 5pm tho.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- The members section -->
+    <section class="member-section">
+      <h1>Members</h1>
+      <ul class="member-list">
+        <li>
+          <a class="member-item member-item-abel" href="./member/abel.html">
+            <img src="./assets/abel/profile.jpg" alt="" class="member-image" />
+            <div class="member-name">
+              <h2>Abel</h2>
+              <img src="./assets/abel/france.png" alt="Brazil Flag" class="logo-icon" />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="member-item member-item-leo" href="./member/leo.html">
+            <img src="./assets/leo/profile.jpeg" alt="" class="member-image" />
+            <div class="member-name">
+              <h2>Leo</h2>
+              <img src="./assets/leo/Brazil_Flag.png" alt="Indonesia Flag" class="logo-icon" />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="member-item member-item-ryne" href="./member/ryne.html">
+            <img src="./assets/ryne/profile.jpg" alt="" class="member-image" />
+            <div class="member-name">
+              <h2>Ryne</h2>
+              <img src="./assets/ryne/indonesian-flag.png" alt="Indonesia Flag" class="logo-icon" />
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <!-- The footer -->
+  <footer>
+    <div class="footer-container container">
+      <div class="footer-upper">
+        <!-- Sitemap -->
+        <div class="footer-sitemap">
+          <h4 class="footer-title">Sitemap</h4>
+          <ul class="footer-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./abel.html">Abel's Page</a></li>
+            <li><a href="./leo.html">Leo's Page</a></li>
+            <li><a href="./ryne.html">Ryne's Page</a></li>
+          </ul>
         </div>
-        <hr />
-        <p class="footer-copyright">© 2023 Group C - Web Design Class</p>
+        <!-- Random Links -->
+        <div class="footer-randoms">
+          <h4 class="footer-title">Random Links</h4>
+          <ul class="footer-list">
+            <li>
+              <a href="https://github.com/RyneFerdinand" target="_blank">Ryne's Github</a>
+            </li>
+            <li><a href="https://github.com/kaitomomotta" target="_blank">Abel's Github</a></li>
+            <li><a href="https://github.com/leoishicava" target="_blank">Leo's Github</a></li>
+          </ul>
+        </div>
+        <!-- About section -->
+        <div class="footer-about">
+          <h4 class="footer-title">About the Website</h4>
+          <p>
+            The website is an assingment from the Web and Design class at
+            Shibaura Institute of Technology. As such, this is created only
+            for educational purposes.
+          </p>
+          <img class="uni-logo" src="../assets/sit-logo.png" alt="Shibaura Institute of Technology Logo" />
+        </div>
       </div>
-    </footer>
-  </body>
+      <hr />
+      <!-- Copyright -->
+      <p class="footer-copyright">© 2023 Group C - Web Design Class</p>
+    </div>
+  </footer>
+</body>
+
 </html>
